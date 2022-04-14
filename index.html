@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+     <!-- 브라우저  reset-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/the-new-css-reset@1.5.1/css/reset.min.css">
+     <!-- 구글 material icon 설정 -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fullpage.css">
+
+     <!-- swiper slider cdn -->
+     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body>
+    <header id="header">
+        <div class="pc_menu">
+            <ul id="menu">
+                <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Home</a></li>
+                <li data-menuanchor="secondPage"><a href="#secondPage">DESIGN</a></li>
+                <li data-menuanchor="3rdPage"><a href="#3rdPage">WEP</a>
+                    <a href="#4rdPage"></a>
+                    <a href="#5rdPage"></a>
+                </li>
+                <li data-menuanchor="4rdPage"><a href="#6rdPage">ABOUT</a></li>
+            </ul>
+        </div>
+        <!-- tab,mo 햄버거버튼 -->
+        <div class="mo_menu">
+            <div class="menu-tab">
+                <div id="one"></div>
+                <div id="two"></div>
+                <div id="three"></div>
+            </div> 
+            <div class="menu-hide">
+                <nav id="nav">
+                    <ul id="menu">
+                        <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Home</a></li>
+                        <li data-menuanchor="secondPage"><a href="#secondPage">DESIGN</a></li>
+                        <li data-menuanchor="3rdPage"><a href="#3rdPage">WEP</a></li>
+                        <li data-menuanchor="4rdPage"><a href="#4rdPage">ABOUT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div id="fullpage">
+        <!--------main-------->
+		<section class="section active" id="section1">
+            <h1 class="hidden">메인</h1>
+            <img src="img/pc_main.jpg" alt="Portfolio" class="pc_main">
+            <img src="img/tab_main.jpg" alt="Portfolio" class="tab_main">
+            <img src="img/mo_main.jpg" alt="Portfolio" class="mo_main">
+        </section>
+
+        <!--------DESIGN-------->
+        <!-- 디자인 -->
+		<section class="section" id="section2">
+            <!-- 탭메뉴 영역 -->
+            <ul class="tabs">
+                <li class="tab-link current" data-tab="tab-1"><a href="#">pop-up design</a></li>
+                <li class="tab-link" data-tab="tab-2"><a href="#">detail page</a></li>
+                <li class="tab-link" data-tab="tab-3"><a href="#">banner</a></li>
+                <li class="tab-link" data-tab="tab-4"><a href="#">card news</a></li>
+            </ul>
+            <div class="container">
+        
+                <!-- 슬라이드 영역 -->
+                <div id="tab-1" class="tab-content current">
+                    <section id="slide">
+                        <div class="back"></div>
+                         <h2 class="hidden"></h2>
+                         <div class="swiper mySwiper">
+                             <div class="swiper-wrapper">
+                               <div class="swiper-slide"><img src="img/Popup1.jpg" alt="1">
+                                 <div class="all">
+                                    <p class="name">이니스프리 팝업창 </p>
+                                    <p class="intention">여름기념 할인행사 팝업창으로
+                                       여름의 시원한 느낌을 주기 위해 수채화한
+                                       나무잎을 사용하여 제품이 돋보이도록
+                                       디자인 하였습니다. 
+                                       </p>
+
+                                       <div class="detail1 detail">
+                                        <p><a href="#" class="modal-link">DETAIL</a></p>
+                                       </div>
+
+                                 </div>
+                             </div>
+                               <div class="swiper-slide"><img src="img/Popup2.jpg" alt="2">
+                                <div class="all">
+                                    <p class="name">봄 시즌 팝업창  </p>
+                                    <p class="intention">봄 맞이 행사 팝업창으로 
+                                        봄에 맞는 따뜻한 색상을 활용하였고 
+                                        벚꽃을 활용하여 포인트를 주며
+                                        흩날리는 표현을 통해 봄의 느낌을 물씬
+                                        줄 수 있도록 하였습니다. 
+                                       </p>
+                                       <div class="detail2 detail">
+                                        <p><a href="#" class="modal-link">DETAIL</a></p>
+                                       </div>
+                                 </div>
+                             </div>
+                               <div class="swiper-slide"><img src="img/Popup3.jpg" alt="3">
+                                <div class="all">
+                                    <p class="name">추석안내 팝업창</p>
+                                    <p class="intention">일러스트 아이콘을 활용하여
+                                        추석의 느낌을 바로 느낄 수 있도록 하였고,
+                                        텍스트가 잘 전달 될 수 있도록 배경색상은
+                                        최소한 사용하고 상단에 컬러를 넣어
+                                        포인트를 주었습니다. 
+                                       </p>
+                                       <div class="detail3 detail">
+                                        <p><a href="#" class="modal-link">DETAIL</a></p>
+                                       </div>
+                                 </div>
+                             </div>
+                               <div class="swiper-slide"><img src="img/Popup4.jpg" alt="4">
+                                <div class="all">
+                                    <p class="name">이벤트 팝업창 </p>
+                                    <p class="intention">WELCOME의 의미와 어울리게 밝은 오렌지계열
+                                        색상을 활용하여 환영의 느낌을 주었고,입구에서
+                                        쿠폰이 나오는 이미지를 만들어 어떤 이벤트가
+                                         진행중인지 바로 알 수 있도록 중앙에
+                                        크게 배치하였습니다. 
+                                       </p>
+                                       <div class="detail4 detail">
+                                        <p><a href="#" class="modal-link">DETAIL</a></p>
+                                       </div>
+                                 </div>
+                             </div>
+                             </div>
+                           </div>
+
+                           <div class="swiper-pagination"></div>
+                             <div class="swiper-prev">
+                                 <span class="material-icons">arrow_back_ios</span>
+                             </div>
+                             <div class="swiper-next">
+                                 <span class="material-icons">arrow_forward_ios</span>       
+                              </div>
+                      </section>
+
+                      <!------------------------------pop-up design_modal------------------------------>
+                      <div class="modal" style="overflow-y:scroll;overflow: auto;display: none;">
+                        <img src="img/modal1-1.png" alt="1">
+                        <a href="#" class="close">close</a>
+                    </div>
+                    <div class="modal-bg" style="display: none;"></div>
+                    <!-- modal2 -->
+                    <div class="modal2" style="overflow-y:scroll;overflow: auto;display: none;">
+                        <img src="img/modal2.png" alt="2">
+                        <a href="#" class="close">close</a>
+                    </div>
+                    <div class="modal-bg2" style="display: none;"></div>
+                     <!-- modal3 -->
+                     <div class="modal3" style="overflow-y:scroll;overflow: auto;display: none;">
+                        <img src="img/modal3.png" alt="3">
+                        <a href="#" class="close">close</a>
+                    </div>
+                    <div class="modal-bg3" style="display: none;"></div>
+                      <!-- modal4 -->
+                      <div class="modal4" style="overflow-y:scroll;overflow: auto;display: none;">
+                        <img src="img/modal4.png" alt="4">
+                        <a href="#" class="close">close</a>
+                    </div>
+                    <div class="modal-bg4" style="display: none;"></div>
+                 </div>
+
+                <div id="tab-2" class="tab-content">
+                    <!-- 슬라이드 영역 -->
+                    <section id="slide">
+                        <div class="back"></div>
+                         <h2 class="hidden"></h2>
+                         <div class="swiper mySwiper">
+                             <div class="swiper-wrapper">
+                               <div class="swiper-slide"><img src="img/s_Detail1.jpg" alt="1">
+                                 <div class="all">
+                                    <p class="name">Nubizo 상세페이지</p>
+                                    <p class="intention">누비지오만의 장점을계속해서
+                                        표시해 줌으로써 인식에 남도록 하였습니다.
+                                        잠은 하루에 마지막을 차지하는 만큼 누비지오 
+                                        이불이 줄 수 있는 이미지를 연출하였습니다.
+                                       </p>
+                                       <div class="detail5 detail">
+                                        <p><a href="#" class="modal-link">DETAIL</a></p>
+                                       </div>
+                                 </div>
+                             </div>
+                               <div class="swiper-slide"><img src="img/s_Detail2.jpg" alt="2">
+                                <div class="all">
+                                    <p class="name">MUNITO 상세페이지</p>
+                                    <p class="intention">무니토의 고급스러움을 표현할 수 있는
+                                        이미지를 사용하여 다른각도의 디자인을
+                                        확인 할 수 있어 장점을 극대화하고 
+                                        차별화된 무니토의 포인트를 이미지와
+                                        설명을 함께 배치하여 전달이 잘 되도록
+                                        디자인하였습니다. 
+                                       </p>
+                                       <div class="detail6 detail">
+                                        <p><a href="#" class="modal-link">DETAIL</a></p>
+                                       </div>
+                                 </div>
+                             </div>
+                             </div>
+                           </div>
+                           <div class="swiper-pagination"></div>
+                             <div class="swiper-prev">
+                                 <span class="material-icons">arrow_back_ios</span>
+                             </div>
+                             <div class="swiper-next">
+                                 <span class="material-icons">arrow_forward_ios</span>       
+                              </div>
+                      </section>
+
+                      <!------------------------------detail page_modal------------------------------>
+                      <!-- modal5 -->
+                      <div class="modal5" style="overflow-y:scroll;width:640px; height: 800px;">
+                        <img src="img/modal5.png" alt="5">
+                        <a href="#" class="close">close</a>
+                    </div>
+                    <div class="modal-bg5" style="display: none;"></div>
+                    <!-- modal6 -->
+                    <div class="modal6" style="overflow-y:scroll;">
+                        <img src="img/modal6.png" alt="6">
+                        <a href="#" class="close">close</a>
+                    </div>
+                    <div class="modal-bg6" style="display: none;"></div>
+                </div>
+
+                <div id="tab-3" class="tab-content">
+                    <!-- 슬라이드 영역 -->
+                    <section id="slide">
+                        <div class="back"></div>
+                         <h2 class="hidden"></h2>
+                         <div class="swiper mySwiper">
+                             <div class="swiper-wrapper">
+                               <div class="swiper-slide"><img src="img/Banner1.jpg" alt="1">
+                                 <div class="all">
+                                    <p class="name">스파오 띠배너</p>
+                                    <p class="intention">여름이 다가오는 따뜻해진 4월을 맞은 이벤트 
+                                        띠배너로 행사 중인 인기상품 이미지를 배치하여
+                                        다양한 제품이 행사 중임을 확인 할 수 있어 클릭을 
+                                        유발 하도록 디자인 하였습니다. 
+                                       </p>
+                                       <div class="detail7 detail">
+                                        <p><a href="#" class="modal-link">DETAIL</a></p>
+                                       </div>
+                                 </div>
+                             </div>
+                               <div class="swiper-slide"><img src="img/Banner2.jpg" alt="2">
+                                <div class="all">
+                                    <p class="name">room&home 띠배너</p>
+                                    <p class="intention">상품에 분류에 맞는 색상과 분위기를
+                                        다르게 하여 광고에 주목이 될 수 있도록짧은 텍스트로 의미를 
+                                        전달하고 클릭을 이끌 수 있도록 하였습니다.  
+                                       </p>
+                                       <div class="detail8 detail">
+                                        <p><a href="#" class="modal-link">DETAIL</a></p>
+                                       </div>
+                                 </div>
+                             </div>
+                               <div class="swiper-slide"><img src="img/Banner3.jpg" alt="3">
+                                <div class="all">
+                                    <p class="name">스파오 배너</p>
+                                    <p class="intention">머니사이드업과의 콜라보 맨투맨 행사
+                                        배너이며, 남녀의 착용 이미지를 활용하여
+                                        상품이 돋보이도록 주변색상을 최소화하였고,
+                                        텍스트에 포인트를 주어 세일 행사임을 강조하였습니다
+                                       </p>
+                                       <div class="detail9 detail">
+                                        <p><a href="#" class="modal-link">DETAIL</a></p>
+                                       </div>
+                                 </div>
+                             </div>
+                             </div>
+                           </div>
+                           <div class="swiper-pagination"></div>
+                             <div class="swiper-prev">
+                                 <span class="material-icons">arrow_back_ios</span>
+                             </div>
+                             <div class="swiper-next">
+                                 <span class="material-icons">arrow_forward_ios</span>       
+                              </div>
+                      </section>
+                      <!------------------------------banner_modal------------------------------>
+                       <!-- modal7 -->
+                    <div class="modal7" style="overflow: auto;">
+                        <img src="img/modal7.png" alt="7">
+                        <a href="#" class="close">close</a>
+                    </div>
+                    <div class="modal-bg7" style="display: none;"></div>
+                      <!-- modal8 -->
+                      <div class="modal8" style="overflow: auto; width:800px; height: 650px;">
+                        <img src="img/modal8.png" alt="7">
+                        <a href="#" class="close">close</a>
+                    </div>
+                    <div class="modal-bg8" style="display: none;"></div>
+                     <!-- modal9 -->
+                     <div class="modal9" style="overflow: auto; width:800px; height: 800px;">
+                        <img src="img/modal9.png" alt="7">
+                        <a href="#" class="close">close</a>
+                    </div>
+                    <div class="modal-bg9" style="display: none;"></div>
+                </div>
+
+                <div id="tab-4" class="tab-content">
+                    <!-- 슬라이드 영역 -->
+                    <section id="slide">
+                        <div class="back"></div>
+                         <h2 class="hidden"></h2>
+                         <div class="swiper mySwiper">
+                             <div class="swiper-wrapper">
+                               <div class="swiper-slide"><img src="img/cardnews_mockup.png" alt="1">
+                                 <div class="all">
+                                    <p class="name">카드뉴스 디자인</p>
+                                    <p class="intention">1인가구를 위한 오늘의집 필수템을 소개하는 카드뉴스입니다.
+                                        계속해서 1인가구가 늘어나는 요즘 많이 찾게되는
+                                        제품을 sns을 통해 추천하는 카드뉴스디자인입니다.
+                                       </p>
+                                       <div class="detail10 detail">
+                                        <p><a href="#" class="modal-link">DETAIL</a></p>
+                                       </div>
+                                 </div>
+                             </div>
+                             </div>
+                           </div>
+                      </section>
+                        <!-- modal10 -->
+                    <div class="modal10" style="overflow: auto; display: none;">
+                        <img src="img/modal10.png" alt="10">
+                        <a href="#" class="close">close</a>
+                    </div>
+                    <div class="modal-bg10" style="display: none;"></div>
+                </div>
+            </div>
+             
+        </section>
+
+        <!--------WEP-------->
+		<section class="section" id="section3">
+            <h2 class="num">01 <p>Responsive</p></h2>
+            <div class="sec_box1">
+                <div class="img_main"><img src="img/guess.png" alt="GUESS">
+                    <ul class="pc_button">
+                        <li class="pc_btn"><a href="https://jeong-dan-bi.github.io/GUESS/" target="_blank">PC</a></li>
+                        <li class="pc_btn"><a href="https://jeong-dan-bi.github.io/GUESS/" onclick="window.open(this.href, '_blank', 'width=830, height=1024, top=20, left=400, scrollbars=yes, resizable=yes'); return false;">TABLET</a></li>
+                        <li class="pc_btn"><a href="https://jeong-dan-bi.github.io/GUESS/" onclick="window.open(this.href, '_blank', 'width=480, height=800, top=80, left=400, scrollbars=yes, resizable=yes'); return false;">MOBILE</a></li>
+                    </ul>
+                </div>
+                <div class="text">
+                    <p class="wap_name">GUESS</p>
+
+                <div class="typo">
+                    <ul class="Program">
+                        <li>사용크로그램</li>
+                        <li>HTML, CSS,  javascript, j-query, 피그마, 포토샵</li>
+                    </ul>
+                    <div class="join">
+                        <ul class="day">
+                            <li>제작기간</li>
+                            <li>2주</li>
+                        </ul>
+                        <ul class="participation">
+                            <li>참여도</li>
+                            <li>100%</li>
+                        </ul>
+                    </div>
+                    <ul class="plan">
+                        <li>기획의도</li>
+                        <li>
+                            게스 웹사이트를 반응형으로 리디자인 하였습니다.
+                            기존 사이트에 없던 에니메이션 효과를 주어 단조로워
+                            보일 수 있는 부분을 보완하였고, 여성의류에 비중이 강하여
+                            아쉬었던 점을 재디자인하였습니다.  </li>
+                    </ul>
+                </div>
+                <ul class="button">
+                    <li class="mo_btn"><a href="guess_plan.html" onclick="window.open(this.href, '_blank', 'width=1200, height=800, top=80, left=100, scrollbars=yes, resizable=yes'); return false;">DETAIL</a></li>
+                    <li class="mo_btn page"><a href="https://jeong-dan-bi.github.io/GUESS/" onclick="window.open(this.href, '_blank', 'width=480, height=800, top=80, left=400, scrollbars=yes, resizable=yes'); return false;">PAGE</a></li>
+                </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="section4">
+            <h2 class="num"> 02 <p>Responsive</p></h2>
+
+            <!-- mo버전 -->
+            <div class="sec_box2 by_mo">
+                <div class="img_main"><img src="img/byredo.png" alt="Byredo"></div>
+                <p class="wap_name1">BYREDO</p>
+
+                <div class="typo">
+                    <ul class="Program">
+                        <li>사용크로그램</li>
+                        <li>HTML, CSS,  javascript, 피그마, 포토샵</li>
+                    </ul>
+                    <div class="join">
+                        <ul class="day">
+                            <li>제작기간</li>
+                            <li>1주</li>
+                        </ul>
+                        <ul class="participation">
+                            <li>참여도</li>
+                            <li>100%</li>
+                        </ul>
+                    </div>
+                    <ul class="plan">
+                        <li>기획의도</li>
+                        <li>BYREDO 웹사이트를 반응형으로 리디자인 하였습니다.
+                            기존 바이레도 사이트에 경우 이미지들이 여백 없이 
+                            나열되어 있어 답답한 느낌을 받을 수 있습니다.
+                            재디자인하여 제품이 더 돋보이도록 제작하였습니다.
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="button">
+                    <li class="pc_btn"><a href="">PC</a></li>
+                    <li class="pc_btn"><a href="">TABLET</a></li>
+                    <li class="pc_btn"><a href="">MOBILE</a></li>
+                    <li class="mo_btn"><a href="byredo_plan.html" onclick="window.open(this.href, '_blank', 'width=1200, height=800, top=80, left=100, scrollbars=yes, resizable=yes'); return false;">DETAIL</a></li>
+                    <li class="mo_btn"><a href="https://jeong-dan-bi.github.io/BYREDO/" onclick="window.open(this.href, '_blank', 'width=420, height=800, top=80, left=400, scrollbars=yes, resizable=yes'); return false;">PAGE</a></li>
+                </ul>
+            </div>
+
+            <!-- pc버전 -->
+            <div class="sec_box2 by_pc">
+                <div class="text"> 
+                    <p class="name">BYREDO</p>
+                <div class="typo">
+                    <ul class="Program">
+                        <li>사용크로그램</li>
+                        <li>HTML, CSS,  javascript, 피그마, 포토샵</li>
+                    </ul>
+                   <div class="join">
+                    <ul class="day">
+                        <li>제작기간</li>
+                        <li>1주</li>
+                    </ul>
+                    <ul class="participation">
+                        <li>참여도</li>
+                        <li>100%</li>
+                    </ul>
+                   </div>
+                    <ul class="plan">
+                        <li>기획의도</li>
+                        <li>BYREDO 웹사이트를 반응형으로 리디자인 하였습니다. <br>
+                            기존 바이레도 사이트에 경우 이미지들이 여백 없이 <br>
+                            나열되어 있어 답답한 느낌을 받을 수 있습니다. <br>
+                            재디자인하여 제품이 더 돋보이도록 제작하였습니다.
+                        </li>
+                    </ul>
+                    <ul class="button">
+                        <li class="mo_btn"><a href="byredo_plan.html" onclick="window.open(this.href, '_blank', 'width=1200, height=800, top=80, left=100, scrollbars=yes, resizable=yes'); return false;">DETAIL</a></li>
+                        <li class="mo_btn page"><a href="">PAGE</a></li>
+                    </ul>
+                </div>
+                </div>
+                <div class="img_main"><img src="img/byredo.png" alt="Byredo">
+                    <ul class="pc_button">
+                        <li class="pc_btn"><a href="https://jeong-dan-bi.github.io/BYREDO/" target="_blank">PC</a></li>
+                        <li class="pc_btn"><a href="https://jeong-dan-bi.github.io/BYREDO/" onclick="window.open(this.href, '_blank', 'width=830, height=1024, top=20, left=400, scrollbars=yes, resizable=yes'); return false;">TABLET</a></li>
+                        <li class="pc_btn"><a href="https://jeong-dan-bi.github.io/BYREDO/" onclick="window.open(this.href, '_blank', 'width=480, height=800, top=80, left=400, scrollbars=yes, resizable=yes'); return false;">MOBILE</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="section5">
+            <h2 class="num">03 <p>Clonecoding</p></h2>
+            <div class="sec_box3">
+                <div class="img_main"><img src="img/starbucks.png" alt="starbucks">
+                    <ul class="pc_button">
+                        <li class="pc_btn sb"><a href="https://jeong-dan-bi.github.io/STARBUCKS/"  target="_blank">PAGE</a></li>
+                    </ul>
+                </div>
+                <div class="text">
+                    <p class="str_name">starbucks</p>
+
+                <div class="typo">
+                    <ul class="Program">
+                        <li>사용크로그램</li>
+                        <li>HTML, CSS,  javascript, 피그마, 포토샵</li>
+                    </ul>
+                    <div class="join">
+                        <ul class="day">
+                            <li>제작기간</li>
+                            <li>1주</li>
+                        </ul>
+                        <ul class="participation">
+                            <li>기여도</li>
+                            <li>100%</li>
+                        </ul>
+                    </div>
+                    <ul class="plan">
+                        <li>기획의도</li>
+                        <li>스타벅스 웹사이트를 입니다.
+                            기존사이트를 clone coding하여 이미지를 재디자인하였습니다. 
+                            기존사이트에서 아쉬운점이었던 공지사항 부분을 노출시켜
+                            클릭하지 않아도 바로 확인할 수 있도록 구성하였습니다.  </li>
+                    </ul>
+                </div>
+                <ul class="button">
+                    <li class="mo_btn"><a href="">DETAIL</a></li>
+                    <li class="mo_btn page"><a href="">PAGE</a></li>
+                </ul>
+                </div>
+        </section>
+
+        <!--------ABOUT-------->
+		<section class="section" id="section6">
+            <ul>
+                <li class="pc_footer"><img src="img/pc_footer.jpg" alt=""></img></li>
+                <li class="tab_footer"><img src="img/tab_footer.jpg" alt=""></img></li>
+                <li class="mo_footer"><img src="img/mo_footer.jpg" alt=""></img></li>
+            </ul>
+        </section>
+	</div>
+    
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/fullpage.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>

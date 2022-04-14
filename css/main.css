@@ -1,0 +1,879 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+
+.hidden{display: none;}
+/* --------------------Mobile--------------------*/
+@media all and (min-width:400px){
+    .pc_menu, .pc_main, .tab_main{display: none;}
+    #section1{display: flex;flex-flow: column nowrap;justify-content : center; align-items : center;}
+    #section1 img{height: 100%;}
+    .mo_main{width: 100%;}
+    /* 햄버거 메뉴 */
+    .menu-tab {
+        width: 90px;
+        height: 70px;
+        position: fixed;
+        z-index: 100;
+        top: 0px;
+        left: 0px;
+        cursor: pointer;
+        transition: all 0.6s ease-in-out;
+    }
+    .menu-tab div {
+        width: 33px;
+        height: 4px;
+        background-color: #3C66BC;
+        display: block;
+        margin: 5px 28px;
+        transition: all 0.6s ease-in-out;
+        border-radius: 5px;
+    }
+    .menu-tab div:nth-child(1) {
+        margin-top: 20px;
+    }
+    
+    /*------ menu-tab ------*/
+    .menu-tab.active {
+        left: 300px;
+        transition: all 600ms ease-in-out;
+    }
+    .menu-tab.active #one {
+        transform: translateY(9px) rotate(-135deg);
+        transition: all 0.6s ease-in-out;
+        background-color: #fff;
+    }
+    .menu-tab.active #two {
+        opacity: 0;
+        transition: 0.4s ease;
+    }
+    .menu-tab.active #three {
+        transform: translateY(-9px) rotate(-45deg);
+        transition: all 0.6s ease-in-out;
+        background-color: #fff;
+    }
+    
+    /* ------nav------- */
+    .menu-hide {
+        width: 300px;
+        left: -300px;
+        height: 100vh;
+        position: fixed;
+        z-index: 100;
+        top: 0px;
+        transition: all 0.6s ease-in-out;
+    }
+    .menu-hide nav ul li {
+        height: 70px;
+        list-style-type: none;
+        text-align: center;
+        line-height: 70px;
+        transition: all 0.5s ease;
+    }
+    .menu-hide nav ul li a {
+        padding: 30px 5px;
+        color: #5c5959;
+        font-weight: 800;
+    }
+    
+    /*------menu-hide------*/
+    .menu-hide.show {
+        left: 0px;
+        background-color: rgba(255, 255, 255, 0.8);
+        transition: all 0.6s ease-in-out;
+    }
+    #nav ul{
+        margin-top: 100px;
+        margin-left: 10px;    
+    }
+    #nav ul li{margin-bottom: 20px;}
+    #nav ul li a{
+        display: block;
+        padding: 10px;
+        width: 250px;
+        height: 40px;
+        font-size: 5vw;
+        margin-bottom: 10px;
+        position: relative;
+        line-height: .6;
+        color: #3C66BC;
+        text-align: center;
+    }
+    
+    /* modal */
+    #tab-4 .swiper-slide img{width: 80%; height: 80%;}
+    .modal,.modal2,.modal3,.modal4 {
+        width: 85%;
+        height: 100%;
+        text-align: center;
+        position: fixed;
+        top: 50%;
+        margin-top: 600px;
+        left: 50%;
+        margin-left: -200px;
+        line-height: 25px;
+        z-index: 900;
+    }
+    .modal5{
+        text-align: center;
+        width: 300px;
+        position: fixed;
+        top: 45%;
+        margin-top: 600px;
+        left: 50%;
+        margin-left: -420px;
+        z-index: 900;
+        display: none;
+    }
+    .modal6{
+        width:420px; height: 800px;
+        position: fixed;
+        top: 45%;
+        margin-top: 600px;
+        left: 50%;
+        margin-left: -220px;
+        z-index: 900;
+        display: none;
+    }
+    .modal7{
+        background: rgb(255, 255, 255);
+        width: 400px;
+        height: 320px;
+        position: fixed;
+        top: 70%;
+        margin-top: 480px;
+        left: 40px;
+        z-index: 900;
+        transition:transform 0.5s easy-in-out;
+        display: none;
+    }
+    .modal8{
+        background: rgb(255, 255, 255) 400px auto;
+        position: fixed;
+        top: 70%;
+        margin-top: 480px;
+        left: 20px;
+        z-index: 900;
+        transition:transform 0.5s easy-in-out;
+        display: none;
+    }
+    .modal9{
+        background: rgb(255, 255, 255) 400px auto;
+        width: 400px;
+        position: fixed;
+        top: 60%;
+        right: -330px;
+        margin-top: 570px;
+        z-index: 900;
+        transition:transform 0.5s easy-in-out;
+        display: none;
+    }
+    .modal10{
+        background: rgb(255, 255, 255) 400px auto;
+        width: 400px;
+        position: fixed;
+        top: 65%;
+        right: 60px;
+        margin-top: 570px;
+        z-index: 900;
+        transition:transform 0.5s easy-in-out;
+        display: none;
+    }
+    .modal img,.modal2 img,.modal3 img,.modal4 img{
+        height: 80%;
+    }
+    .modal5 img{width: 70%; margin-left: 187px;}
+    .modal6 img, .modal7 img{width: 100%;}
+    .modal8 img{width: 400px; height: 100%;}
+    .modal9 img{width: 400px; height: auto;}
+    .modal a.close ,.modal2 a.close,.modal3 a.close ,.modal4 a.close  {
+      font-size: 20px;
+      position: absolute;
+      top: 10px;
+      right: 35px;
+    
+    }
+    .modal-bg,.modal-bg2,.modal-bg3,.modal-bg4,.modal-bg5,.modal-bg6,.modal-bg7,.modal-bg8,.modal-bg9,.modal-bg10{
+        background: rgb(66, 66, 66);
+        opacity: 0.8;
+        position: absolute;
+        top: 0px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 890;
+    }
+    .modal5 a.close,.modal6 a.close, .modal7 a.close, .modal10 a.close{
+        font-size: 23px;
+        position: absolute;
+        top: 10px;
+        right: 40px;
+    }
+    .modal8 a.close, .modal9 a.close{
+        position: absolute;
+        right: 400px; 
+        font-size: 20px;
+    }
+    .modal a.close:hover,.modal2 a.close:hover,.modal3 a.close:hover,.modal4 a.close:hover,
+    .modal5 a.close:hover, .modal6 a.close:hover, .modal7 a.close:hover, .modal8 a.close:hover, 
+    .modal9 a.close:hover, .modal10 a.close:hover
+    {color: red;}
+    
+    /* ---------------------------------------------------------- */
+    /* ------DESIGN 영역------ */
+    .container{
+        width: 300px;
+        margin: auto;
+    }
+    ul.tabs{
+        margin: auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 70px;
+    }
+    ul.tabs li{
+        width: 80px ;
+        height: 75px;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 10px;
+        cursor: pointer;
+        box-shadow: 3px 3px 5px #ccc;
+        /* padding: 10px 15px; */
+        margin-left: 15px;
+        font-size: 10px;
+    }
+    ul.tabs li a{
+        position: relative;
+        font-size: 17px;
+        top: 12px;
+    }
+    ul.tabs li:nth-child(3) a,ul.tabs li:nth-child(4) a{
+        position: relative;
+        top: 23px;
+    }
+    ul.tabs li{opacity: 0.5;}
+    ul.tabs li.current{
+        font-weight: bold;
+        color: #3C66BC;
+        opacity: 2;
+    }
+    /* --------tab menu_ tab-content-------- */
+    .tab-content{
+        display: none;
+        padding: 15px;
+        padding-top: 100px;
+    }
+    .tab-content.current{
+        display: inherit;
+    }
+    /* --------tab menu_slide-------- */
+    #slide{position: relative;}
+    .swiper{
+        width: 300px;
+        position: absolute;
+        right: 16px;
+    }
+    .swiper-slide{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .swiper-slide img{
+        width: 350px;
+    }
+    .name{font-size: 20px; 
+        font-weight: bold; 
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center; 
+        padding: 10px 0;
+    }
+    .intention{
+        font-size: 13px;
+        padding: 10px;
+        font-family: 'Noto Sans KR', sans-serif;
+        text-align: justify;
+    }
+    .swiper-slide div.detail p{
+        background-color: #fff;
+        margin-top: 40px;
+        margin: auto;
+        width: 80px;
+        height: 50px;
+        font-size: 17px;
+        border-radius: 15px;
+        text-align: center;
+        padding-top: 15px;
+        box-shadow: 3px 3px 3px #ccc;
+    }
+    /* button */
+    #slide .swiper-prev{
+        position: absolute;
+        bottom: 400px;
+        left: -40px;
+        color: #3C66BC;
+    }
+    #slide .swiper-next{
+        position: absolute;
+        bottom: 400px;
+        left: 290px;
+        z-index: 10;
+        color: #3C66BC;
+    }
+    div.back{
+        width: 300px;
+        height: 300px;
+        background-color: rgb(233, 233, 233);
+        box-shadow: 0 0 4px rgb(235, 235, 235);
+        border-radius: 50%;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+    }
+    
+    
+    /* ---------------------------------------------------------- */
+    /* ------Wap 영역------ */
+    
+    /* ------GUESS------ */
+    .by_pc{display: none;}
+    div.sec_box1, div.sec_box3{width: 310px;margin: auto; font-family: 'Noto Sans', sans-serif; }
+    h2.num{font-size: 50px; font-weight: bold; 
+           display: flex; padding-left: 25px; color: #363636;
+    }
+    h2.num p{font-size: 16px; padding: 40px 0 0 10px;}
+    .img_main img{width: 300px;margin-top: 15px;}
+    p.wap_name{font-size: 40px; font-weight: 700; color: #B00707; opacity: 80%; text-align: center;}
+    .str_name{font-size: 40px; font-weight: 700; color: #348467; text-align: center;}
+    
+    /*사용프로그램 & 제작기간 & 참여도 text*/
+    div.typo{margin-top: 20px;}
+    ul.Program li:nth-child(1), ul.day li:nth-child(1), ul.participation li:nth-child(1), ul.plan li:nth-child(1){ 
+        font-size: 15px; font-weight: bold;
+    }
+    ul.Program li:nth-child(2), ul.day li:nth-child(2), ul.participation li:nth-child(2), ul.plan li:nth-child(2){
+        font-size: 12px;margin: 5px 0;
+    }
+    ul.participation{padding-left: 40px;}
+    div.join{display: flex; margin-top: 20px;}
+    ul.plan{margin-top: 20px; line-height: 1.5;}
+    
+    /*button*/
+    .pc_btn{display: none;}
+    .button{display: flex;}
+    .button .mo_btn{
+        width: 90px; height: 40px;
+        background-color: #fafafa; box-shadow: 3px 3px 6px rgb(207, 206, 206); 
+        text-align: center;padding: 10px; margin: 20px 0 0 45px;
+    }
+    
+    /* ------BYREDO------ */
+    div.sec_box2{width: 310px;margin: auto; font-family: 'Noto Sans', sans-serif; }
+    p.wap_name1{font-size: 40px; font-weight: 700; color: #3C3C3C; opacity: 80%; text-align: center;}
+
+    /* footer */
+    .pc_footer, .tab_footer{display: none;}
+    .mo_footer{display: block;text-align: center;}
+    
+    
+    
+}
+
+
+/* --------------------Tablet--------------------*/
+@media all and (min-width:768px){
+.tab_main{display: block;}
+.mo_main{display: none;}
+.container{
+        width: 300px;
+        margin: auto;
+}
+.swiper{
+        width: 300px;
+        position: absolute;
+        right: 16px;
+    }
+ul.tabs li{
+        width: 100px ;
+        height: 90px;
+        /* padding: 10px 15px; */
+        font-size: 10px;
+}
+ul.tabs li:nth-child(1) a{position: relative; top: 18px;}
+ul.tabs li:nth-child(2) a, ul.tabs li:nth-child(3) a, ul.tabs li:nth-child(4) a{
+        position: relative;
+        top: 30px;
+}
+.swiper-slide p.intention{ font-size: 17px;}
+.swiper-slide div.detail p{
+        margin-top: 7px;
+        width: 80px;
+        height: 50px;
+        font-size: 17px;
+}
+    /* button */
+#slide .swiper-prev{
+        position: absolute;
+        bottom: 460px;
+        left: -70px;
+}
+#slide .swiper-next{
+        position: absolute;
+        bottom: 460px;
+        left: 320px;
+        z-index: 10;
+}
+#tab-3 .swiper-prev{
+    position: absolute;
+    bottom: 390px;
+}
+#tab-3 .swiper-next{
+    position: absolute;
+    bottom: 390px;
+}
+
+/* modal */
+.modal,.modal2,.modal3,.modal4 {
+	width: 55%;
+	height: 100%;
+	text-align: center;
+	position: fixed;
+	top: 50%;
+	margin-top: 600px;
+	left: 50%;
+	margin-left: -200px;
+	line-height: 25px;
+	z-index: 900;
+}
+.modal5{
+    width: 50%;
+	height: 100%;
+	text-align: center;
+	position: fixed;
+	top: 45%;
+	margin-top: 600px;
+	left: 50%;
+	margin-left: -300px;
+	line-height: 25px;
+	z-index: 900;
+    display: none;
+}
+.modal6{width: 80%;margin-left: -320px;}
+.modal7{
+    width: 100%;
+    height: 62%;
+    margin-left: -50px;
+}
+.modal8{
+    background: rgb(255, 255, 255);
+    width: 40%;
+	height: 100%;
+    position: fixed;
+    top: 70%;
+    margin-top: 480px;
+    left: 0.5%;
+    z-index: 900;
+    transition:transform 0.5s easy-in-out;
+    display: none;
+}
+.modal9{
+    background: rgb(255, 255, 255);
+    width: 40%;
+    position: fixed;
+    top: 60%;
+    right: 2px;
+    margin-top: 480px;
+    z-index: 900;
+    transition:transform 0.5s easy-in-out;
+    display: none;
+}
+#tab-4 .swiper-slide img{
+    width: 80%; height: 80%;
+    margin-left: 30px;
+}
+.modal10{
+    background: rgb(255, 255, 255);
+    width: 70%;
+    position: fixed;
+    top: 65%;
+    right: 120px;
+    margin-top: 480px;
+    z-index: 900;
+    transition:transform 0.5s easy-in-out;
+    display: none;
+}
+
+.modal img,.modal2 img,.modal3 img,.modal4 img{
+    height: 80%;
+}
+.modal8 img,.modal9 img{width: 100%;height: auto;}
+.modal5 img,.modal6 img{width: 100%; margin: 0;}
+.modal a.close ,.modal2 a.close,.modal3 a.close ,.modal4 a.close  {
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  right: 35px;
+}
+.modal5 a.close,.modal6 a.close, .modal7 a.close, .modal8 a.close, .modal9 a.close{
+    font-size: 25px;
+    position: absolute;
+    top: 10px;
+    right: 40px;
+}
+.modal a.close:hover,.modal2 a.close:hover,.modal3 a.close:hover,.modal4 a.close:hover,
+.modal5 a.close:hover, .modal6 a.close:hover, .modal7 a.close:hover, .modal8 a.close:hover, .modal9 a.close:hover{color: red;}
+
+
+
+/* ---------------------------------------------------------- */
+/* ------Wap 영역------ */
+
+/* ------GUESS------ */
+div.sec_box1, div.sec_box3{width: 550px;margin: auto;}
+h2.num{font-size: 60px;}
+h2.num p{font-size: 17px; padding: 50px 0 0 10px;}
+.img_main img{width: 500px;margin-top: 15px;padding-left: 50px;}
+p.wap_name{font-size: 45px; font-weight: 800; color: #B00707;}
+.str_name{font-size: 45px; font-weight: 800; color: #348467; text-align: center;}
+.button .mo_btn{
+    width: 150px; height: 45px;
+    padding: 11px; margin: 20px 0 0 80px; border-radius: 20px;
+}
+/* ------BYREDO------ */
+div.sec_box2{width: 550px;margin: auto; font-family: 'Noto Sans', sans-serif; }
+p.wap_name1{font-size: 45px; font-weight: 700; color: #3C3C3C; opacity: 80%; text-align: center;}
+
+
+/* footer */
+.pc_footer, .mo_footer{display: none;}
+.tab_footer{display: block; padding-top: 70px;}
+
+
+
+}
+
+
+
+/* ---------------------Desktop--------------------*/
+@media all and (min-width:1200px){
+    .mo_main{display: none;} .pc_main{display: block;}
+    .mo_menu{display: none;}
+    .pc_menu{
+        display: block;
+        /* position: fixed; */
+        z-index: 10;
+        position: relative;
+        font-family: 'Merriweather', serif;
+    }
+    .pc_menu ul{
+        display: flex;
+        position: absolute;
+        right: 230px;
+    }
+    .pc_menu ul li{
+        font-size: 25px;
+        padding: 15px 25px;
+    }
+    .pc_menu ul li:hover{
+        text-decoration: underline;
+        transition: all 0.5s;
+    }
+
+    /* ------------ tab menu_ ------------ */
+.container{
+    width: 1400px;
+    margin: auto;
+
+}
+#section2{background: url(../img/section_b.png);}
+ul.tabs li{
+    width: 150px ;
+    height: 100px;
+    border-radius: 30px;
+}
+ul.tabs li a{
+    position: relative;
+    top: 35px;
+    font-size: 23px;
+}
+ul.tabs li.current{
+    font-weight: bold;
+}
+
+/* modal */
+/* -------------modal----------- */
+.modal, .modal2, .modal3, .modal4{
+    width: 700px;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    margin-top: 480px;
+    left: 35%;
+    margin-left: 10px;
+    line-height: 25px;
+    z-index: 99;
+    transition:transform 0.5s easy-in-out
+}
+.modal5, .modal6{
+    background: rgb(255, 255, 255);
+    width:640px; height: 800px;
+    text-align: center;
+    position: fixed;
+    overflow: hidden;
+    top: 60%;
+    margin-top: 480px;
+    left: 35%;
+    margin-left: 10px;
+    line-height: 25px;
+    z-index: 99;
+    transition:transform 0.5s easy-in-out;
+    display: none;
+}
+.modal7, .modal8{
+    background: rgb(255, 255, 255);
+    width:800px; height: 620px;
+    position: fixed;
+    top: 70%;
+    margin-top: 480px;
+    left: 29%;
+    z-index: 99;
+    transition:transform 0.5s easy-in-out;
+    display: none;
+}
+.modal9{
+    background: rgb(255, 255, 255);
+    width:800px; height: 620px;
+    position: fixed;
+    top: 60%;
+    margin-top: 480px;
+    left: 600px;
+    z-index: 99;
+    transition:transform 0.5s easy-in-out;
+    display: none;
+}
+.modal10{
+    background: rgb(255, 255, 255);
+    width: 750px; height: 90%;
+    position: fixed;
+    top: 56%;
+    margin-top: 480px;
+    left: 600px;
+    z-index: 990;
+    transition:transform 0.5s easy-in-out;
+}
+#tab-4 .swiper-slide img{
+    width: 30%; height: 80%;
+    margin-left: 30px;
+}
+.modal img, .modal2 img, .modal3 img, .modal4 img{margin-top: 100px; width: 500px; height: 850px;}
+.modal5 img,.modal6 img, .modal7 img, .modal8 img, .modal9 img, .modal10 img{width: 100%; height: auto;padding-left: 0;}
+.detail1, .detail2{transition:transform 0.5s easy-in-out}
+.modal a, .modal2 a {
+  line-height: 1em;
+}
+.modal-bg, .modal-bg2, .modal-bg3, .modal-bg4, .modal-bg5, .modal-bg6, .modal-bg7, .modal-bg8 , .modal-bg9{
+    background: rgb(41, 41, 41);
+    zoom: 1;
+    opacity: 0.9;
+    filter: alpha(opacity=80); 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+}
+.modal a.close, .modal2 a.close, .modal3 a.close, .modal4 a.close{
+    font-size: 20px;
+    position: absolute;
+    top: 110px;
+    right: 120px;
+}
+.modal5 a.close,.modal6 a.close, .modal7 a.close, .modal8 a.close, .modal9 a.close{
+    font-size: 25px;
+    position: absolute;
+    top: 10px;
+    right: 40px;
+}
+
+.modal a.close:hover,.modal2 a.close:hover,.modal3 a.close:hover,.modal4 a.close:hover,
+.modal5 a.close:hover, .modal6 a.close:hover, .modal7 a.close:hover, .modal8 a.close:hover, .modal9 a.close:hover{color: red;}
+
+
+/* ------------ tab menu_ tab-content------------ */
+.tab-content{
+    display: none;
+    padding: 15px;
+    padding-left: 300px;
+    padding-top: 100px;
+}
+
+.tab-content.current{
+    display: inherit;
+}
+
+/* ------------ tab menu_slide------------ */
+#slide{position: relative;}
+.swiper{
+    width: 900px;
+    position: absolute;
+    top: 10px;
+    left: -120px;
+}
+.swiper-slide{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.swiper-slide img{
+    width: 400px;
+}
+.name{font-size: 35px; font-weight: bold;padding-left: 100px;padding-top: 30px;font-family: 'Nanum Myeongjo', serif;}
+.intention{
+    padding-left: 100px;
+    font-size: 19px;
+    padding-top: 40px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.swiper-slide div.detail p{
+    margin-left: 100px;
+    margin-top: 30px;
+    width: 100px;
+    height: 40px;
+    font-size: 17px;
+    border-radius: 20px;
+    padding-top: 10px;
+}
+
+/* button */
+#slide .swiper-prev{
+    position: absolute;
+    bottom: 240px;
+    left: -70px;
+}
+#slide .swiper-next{
+    position: absolute;
+    bottom: 250px;
+    left: 400px;
+}
+
+div.back{
+    width: 500px;
+    height: 500px;
+    box-shadow: 4px 4px 4px rgb(228, 228, 228);
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    right: 550px;
+}
+
+/* ------------ GUESS------------  */
+#section3{background: url(../img/guess_bg.jpg)}
+div.sec_box1, div.sec_box3{
+    width: 1500px;height: 80%; 
+    margin: auto; 
+    font-family: 'Noto Sans', sans-serif; 
+    display: flex;
+}
+h2.num{
+    font-size: 90px; 
+    font-weight: bold; 
+    padding-left: 150px;padding-top: 30px;
+}
+h2.num p{font-size: 28px; padding: 65px 0 0 8px;}
+.img_main img{width: 650px;margin-top: 100px;}
+p.wap_name{font-size: 80px; font-weight: 700; color: #B00707; opacity: 80%; text-align: left;margin-left: 45px;}
+p.wap_name::after{
+    content: "";
+    position: absolute;
+    width: 83%;
+    height: 0.1%;
+    background: #000;
+    top: -110px;
+    left: -190%;
+}
+.str_name{font-size: 80px; font-weight: 700; color: #348467; opacity: 80%; text-align: left;margin-left: 45px;}
+
+/*사용프로그램 & 제작기간 & 참여도 TEXT*/
+div.text{margin-top: 20px; width: 550px;position: absolute; right:350px; top: 250px;}
+ul.Program li:nth-child(1), ul.day li:nth-child(1), ul.participation li:nth-child(1), ul.plan li:nth-child(1){ 
+    font-size: 20px; font-weight: bold;
+}
+ul.Program li:nth-child(2), ul.day li:nth-child(2), ul.participation li:nth-child(2), ul.plan li:nth-child(2){
+    font-size: 14px;margin: 5px 0;
+}
+/*button*/
+.pc_btn{display: block;width: 150px; height: 45px;
+    background-color: #fafafa; box-shadow: 3px 3px 6px rgb(207, 206, 206); 
+    text-align: center;padding: 10px;border-radius: 20px;
+}
+.pc_btn_starbucks{
+    display: block;width: 150px; height: 45px;
+    background-color: #fafafa; box-shadow: 3px 3px 6px rgb(207, 206, 206); 
+    text-align: center;padding: 10px;border-radius: 20px; position: absolute;left: 170px;
+}
+
+ul.pc_button{
+    width: 500px; 
+    display: flex; 
+    justify-content: space-between;
+    position: absolute;bottom: 130px; left: 300px;
+}
+.button{width: 500px;padding: 30px 0 0 90px;}
+ul.button .page{display: none;}
+ul.button .mo_btn{position: absolute;right: 300px;}
+
+
+/* ------BYREDO------ */
+#section4{background: url(../img/byredo_bg.jpg);}
+div.by_mo{display: none;}
+div.by_pc{display: block; display: flex;}
+div.sec_box2{
+    width: 1500px;
+    height: 80%; ;
+    margin: auto; 
+    font-family: 'Noto Sans', sans-serif; 
+}
+div.by_pc p.name{
+    font-size: 80px; 
+    font-weight: 700; 
+    color: #3C3C3C; 
+    opacity: 80%; 
+    text-align: left;
+    padding: 0;
+    margin-left: 50px;
+}
+.by_pc::after{
+    content: "";
+    position: absolute;
+    width: 21.8%;
+    height: 0.1%;
+    background: #000;
+    top: 160px;
+    left: 0;
+}
+
+div.typo{
+    width: 550px; 
+    margin-left: 50px;
+}
+div.sec_box2 .img_main img{width: 650px;}
+div.sec_box2 .img_main{position: absolute;right: 330px;}
+div.by_pc ul.pc_button{
+    position: relative;
+    top: 20px;
+    left: 110px;
+}
+.by_pc div.text{margin-top: 20px; width: 550px;position: absolute; left: 300px; top: 250px;}
+
+
+.sb{position: absolute;left: 180px;bottom: -10px;}
+
+/* footer */
+.tab_footer, .mo_footer{display: none;}
+.pc_footer{display: block;}
+
+
+}
