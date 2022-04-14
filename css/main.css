@@ -785,7 +785,7 @@ h2.num{
 h2.num p{font-size: 28px; padding: 65px 0 0 8px;}
 .img_main img{width: 650px;margin-top: 100px;}
 p.wap_name{font-size: 80px; font-weight: 700; color: #B00707; opacity: 80%; text-align: left;margin-left: 45px;}
-p.wap_name::after{
+p.wap_name::after, p.str_name::after{
     content: "";
     position: absolute;
     width: 83%;
@@ -874,6 +874,8 @@ div.by_pc ul.pc_button{
 /* footer */
 .tab_footer, .mo_footer{display: none;}
 .pc_footer{display: block;}
+
+#section5{background: url(../img/starbucks_bg.jpg);}
 
 
 }
