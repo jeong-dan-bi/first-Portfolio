@@ -315,6 +315,7 @@
         bottom: 400px;
         left: -40px;
         color: #3C66BC;
+        cursor: pointer;
     }
     #slide .swiper-next{
         position: absolute;
@@ -322,6 +323,7 @@
         left: 290px;
         z-index: 10;
         color: #3C66BC;
+        cursor: pointer;
     }
     div.back{
         width: 300px;
