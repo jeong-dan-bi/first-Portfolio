@@ -132,3 +132,14 @@ $(document).ready(function(){
 		$('.modal-bg10').hide();
 	})
 })
+// modal_plus
+$(document).ready(function(){
+	$('.detail_plus').click(function(){
+		$('.modal_plus').show();
+		$('.modal-bg11').show();
+	});
+	$('.modal_plus .close').click(function(){
+		$('.modal_plus').hide();
+		$('.modal-bg11').hide();
+	})
+})

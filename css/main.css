@@ -128,7 +128,7 @@
         z-index: 900;
         display: none;
     }
-    .modal6{
+    .modal6, .modal_plus{
         width:420px; height: 800px;
         position: fixed;
         top: 45%;
@@ -196,7 +196,7 @@
       right: 35px;
     
     }
-    .modal-bg,.modal-bg2,.modal-bg3,.modal-bg4,.modal-bg5,.modal-bg6,.modal-bg7,.modal-bg8,.modal-bg9,.modal-bg10{
+    .modal-bg,.modal-bg2,.modal-bg3,.modal-bg4,.modal-bg5,.modal-bg6,.modal-bg7,.modal-bg8,.modal-bg9,.modal-bg10,.modal-bg11{
         background: rgb(66, 66, 66);
         opacity: 0.8;
         position: absolute;
@@ -206,7 +206,7 @@
         right: 0;
         z-index: 890;
     }
-    .modal5 a.close,.modal6 a.close, .modal7 a.close, .modal10 a.close{
+    .modal5 a.close,.modal6 a.close, .modal7 a.close, .modal10 a.close, .modal_plus a.close{
         font-size: 23px;
         position: absolute;
         top: 10px;
@@ -462,6 +462,19 @@ ul.tabs li:nth-child(2) a, ul.tabs li:nth-child(3) a, ul.tabs li:nth-child(4) a{
     display: none;
 }
 .modal6{width: 80%;margin-left: -320px;}
+.modal_plus{
+    width: 80%;
+    height: 85%;
+    text-align: center;
+	position: fixed;
+	top: 45%;
+	margin-top: 600px;
+	left: 50%;
+	margin-left: -300px;
+	line-height: 25px;
+	z-index: 900;
+    display: none;
+}
 .modal7{
     width: 100%;
     height: 62%;
@@ -510,21 +523,21 @@ ul.tabs li:nth-child(2) a, ul.tabs li:nth-child(3) a, ul.tabs li:nth-child(4) a{
     height: 80%;
 }
 .modal8 img,.modal9 img{width: 100%;height: auto;}
-.modal5 img,.modal6 img{width: 100%; margin: 0;}
+.modal5 img,.modal6 img,.modal_plus img{width: 100%; margin: 0;}
 .modal a.close ,.modal2 a.close,.modal3 a.close ,.modal4 a.close  {
   font-size: 20px;
   position: absolute;
   top: 10px;
   right: 35px;
 }
-.modal5 a.close,.modal6 a.close, .modal7 a.close, .modal8 a.close, .modal9 a.close{
+.modal5 a.close,.modal6 a.close, .modal7 a.close, .modal8 a.close, .modal9 a.close, .modal_plus a.close{
     font-size: 25px;
     position: absolute;
     top: 10px;
     right: 40px;
 }
 .modal a.close:hover,.modal2 a.close:hover,.modal3 a.close:hover,.modal4 a.close:hover,
-.modal5 a.close:hover, .modal6 a.close:hover, .modal7 a.close:hover, .modal8 a.close:hover, .modal9 a.close:hover{color: red;}
+.modal5 a.close:hover, .modal6 a.close:hover, .modal7 a.close:hover, .modal8 a.close:hover, .modal9 a.close:hover, .modal_plus a.close:hover{color: red;}
 
 
 
@@ -617,7 +630,7 @@ ul.tabs li.current{
     z-index: 99;
     transition:transform 0.5s easy-in-out
 }
-.modal5, .modal6{
+.modal5, .modal6, .modal_plus{
     background: rgb(255, 255, 255);
     width:640px; height: 800px;
     text-align: center;
@@ -669,12 +682,12 @@ ul.tabs li.current{
     margin-left: 30px;
 }
 .modal img, .modal2 img, .modal3 img, .modal4 img{margin-top: 100px; width: 500px; height: 850px;}
-.modal5 img,.modal6 img, .modal7 img, .modal8 img, .modal9 img, .modal10 img{width: 100%; height: auto;padding-left: 0;}
+.modal5 img,.modal6 img, .modal7 img, .modal8 img, .modal9 img, .modal10 img, .modal_plus img{width: 100%; height: auto;padding-left: 0;}
 .detail1, .detail2{transition:transform 0.5s easy-in-out}
 .modal a, .modal2 a {
   line-height: 1em;
 }
-.modal-bg, .modal-bg2, .modal-bg3, .modal-bg4, .modal-bg5, .modal-bg6, .modal-bg7, .modal-bg8 , .modal-bg9{
+.modal-bg, .modal-bg2, .modal-bg3, .modal-bg4, .modal-bg5, .modal-bg6, .modal-bg7, .modal-bg8 , .modal-bg9, .modal-bg11{
     background: rgb(41, 41, 41);
     zoom: 1;
     opacity: 0.9;
@@ -692,7 +705,7 @@ ul.tabs li.current{
     top: 110px;
     right: 120px;
 }
-.modal5 a.close,.modal6 a.close, .modal7 a.close, .modal8 a.close, .modal9 a.close{
+.modal5 a.close,.modal6 a.close, .modal7 a.close, .modal8 a.close, .modal9 a.close, .modal_plus a.close{
     font-size: 25px;
     position: absolute;
     top: 10px;
@@ -700,7 +713,7 @@ ul.tabs li.current{
 }
 
 .modal a.close:hover,.modal2 a.close:hover,.modal3 a.close:hover,.modal4 a.close:hover,
-.modal5 a.close:hover, .modal6 a.close:hover, .modal7 a.close:hover, .modal8 a.close:hover, .modal9 a.close:hover{color: red;}
+.modal5 a.close:hover, .modal6 a.close:hover, .modal7 a.close:hover, .modal8 a.close:hover, .modal9 a.close:hover, .modal_plus a.close:hover{color: red;}
 
 
 /* ------------ tab menu_ tab-content------------ */
