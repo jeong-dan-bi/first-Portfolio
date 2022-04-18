@@ -7,7 +7,6 @@
 
 .hidden{display: none;}
 /* --------------------Mobile--------------------*/
-@media all and (min-width:400px){
     .pc_menu, .pc_main, .tab_main{display: none;}
     #section1{display: flex;flex-flow: column nowrap;justify-content : center; align-items : center;}
     #section1 img{height: 100%;}
@@ -382,7 +381,7 @@
     
     
     
-}
+
 
 
 /* --------------------Tablet--------------------*/
