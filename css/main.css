@@ -154,7 +154,7 @@
         position: fixed;
         top: 70%;
         margin-top: 480px;
-        left: 20px;
+        left: 30px;
         z-index: 900;
         transition:transform 0.5s easy-in-out;
         display: none;
@@ -164,7 +164,7 @@
         width: 400px;
         position: fixed;
         top: 60%;
-        right: -330px;
+        right: -350px;
         margin-top: 570px;
         z-index: 900;
         transition:transform 0.5s easy-in-out;
@@ -528,7 +528,7 @@ ul.tabs li:nth-child(2) a, ul.tabs li:nth-child(3) a, ul.tabs li:nth-child(4) a{
 .modal img,.modal2 img,.modal3 img,.modal4 img{
     height: 80%;
 }
-.modal8 img,.modal9 img{width: 100%;height: auto;}
+.modal8 img,.modal9 img{width: 80%;height: auto; padding-left: 120px;}
 .modal5 img,.modal6 img,.modal_plus img{width: 100%; margin: 0;}
 .modal a.close ,.modal2 a.close,.modal3 a.close ,.modal4 a.close  {
   font-size: 20px;
@@ -772,10 +772,12 @@ ul.tabs li.current{
     bottom: 240px;
     left: -70px;
 }
+#slide .swiper-prev span{font-size: 40px;}
+#slide .swiper-next span{font-size: 40px;}
 #slide .swiper-next{
     position: absolute;
     bottom: 250px;
-    left: 400px;
+    left: 385px;
 }
 
 div.back{
