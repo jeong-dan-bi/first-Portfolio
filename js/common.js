@@ -143,3 +143,14 @@ $(document).ready(function(){
 		$('.modal-bg11').hide();
 	})
 })
+// modal_plus2
+$(document).ready(function(){
+	$('.detail_plus2').click(function(){
+		$('.modal_plus2').show();
+		$('.modal-bg12').show();
+	});
+	$('.modal_plus2 .close').click(function(){
+		$('.modal_plus2').hide();
+		$('.modal-bg12').hide();
+	})
+})

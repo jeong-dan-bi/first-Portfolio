@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&family=Noto+Sans+KR&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 
 
 .hidden{display: none;}
@@ -154,7 +155,7 @@
         position: fixed;
         top: 70%;
         margin-top: 480px;
-        left: 30px;
+        left: 70px;
         z-index: 900;
         transition:transform 0.5s easy-in-out;
         display: none;
@@ -164,8 +165,18 @@
         width: 400px;
         position: fixed;
         top: 60%;
-        right: -350px;
+        right: -400px;
         margin-top: 570px;
+        z-index: 900;
+        transition:transform 0.5s easy-in-out;
+        display: none;
+    }
+    .modal_plus2{
+        width: 300px;
+        height: 100%;
+        position: fixed;
+        bottom: -1100px;
+        left: 100px;
         z-index: 900;
         transition:transform 0.5s easy-in-out;
         display: none;
@@ -186,8 +197,8 @@
     }
     .modal5 img{width: 70%; margin-left: 187px;}
     .modal6 img, .modal7 img{width: 100%;}
-    .modal8 img{width: 400px; height: 100%;}
-    .modal9 img{width: 400px; height: auto;}
+    .modal8 img{width: 350px; height: 100%;}
+    .modal9 img{width: 350px; height: auto;}
     .modal a.close ,.modal2 a.close,.modal3 a.close ,.modal4 a.close  {
       font-size: 20px;
       position: absolute;
@@ -195,7 +206,7 @@
       right: 35px;
     
     }
-    .modal-bg,.modal-bg2,.modal-bg3,.modal-bg4,.modal-bg5,.modal-bg6,.modal-bg7,.modal-bg8,.modal-bg9,.modal-bg10,.modal-bg11{
+    .modal-bg,.modal-bg2,.modal-bg3,.modal-bg4,.modal-bg5,.modal-bg6,.modal-bg7,.modal-bg8,.modal-bg9,.modal-bg10,.modal-bg11,.modal-bg12{
         background: rgb(66, 66, 66);
         opacity: 0.8;
         position: absolute;
@@ -205,7 +216,7 @@
         right: 0;
         z-index: 890;
     }
-    .modal5 a.close,.modal6 a.close, .modal7 a.close, .modal10 a.close, .modal_plus a.close{
+    .modal5 a.close,.modal6 a.close, .modal7 a.close, .modal10 a.close, .modal_plus a.close, .modal_plus2 a.close{
         font-size: 23px;
         position: absolute;
         top: 10px;
@@ -213,12 +224,12 @@
     }
     .modal8 a.close, .modal9 a.close{
         position: absolute;
-        right: 400px; 
+        right: 460px; 
         font-size: 20px;
     }
     .modal a.close:hover,.modal2 a.close:hover,.modal3 a.close:hover,.modal4 a.close:hover,
     .modal5 a.close:hover, .modal6 a.close:hover, .modal7 a.close:hover, .modal8 a.close:hover, 
-    .modal9 a.close:hover, .modal10 a.close:hover
+    .modal9 a.close:hover, .modal10 a.close:hover, .modal_plus2 a.close:hover
     {color: red;}
     
     /* ---------------------------------------------------------- */
@@ -509,6 +520,17 @@ ul.tabs li:nth-child(2) a, ul.tabs li:nth-child(3) a, ul.tabs li:nth-child(4) a{
     transition:transform 0.5s easy-in-out;
     display: none;
 }
+.modal_plus2{
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 70%;
+    margin-top: 420px;
+    left: 220px;
+    z-index: 900;
+    transition:transform 0.5s easy-in-out;
+    display: none;
+}
 #tab-4 .swiper-slide img{
     width: 80%; height: 80%;
     margin-left: 30px;
@@ -528,6 +550,7 @@ ul.tabs li:nth-child(2) a, ul.tabs li:nth-child(3) a, ul.tabs li:nth-child(4) a{
 .modal img,.modal2 img,.modal3 img,.modal4 img{
     height: 80%;
 }
+
 .modal8 img,.modal9 img{width: 80%;height: auto; padding-left: 120px;}
 .modal5 img,.modal6 img,.modal_plus img{width: 100%; margin: 0;}
 .modal a.close ,.modal2 a.close,.modal3 a.close ,.modal4 a.close  {
@@ -536,14 +559,14 @@ ul.tabs li:nth-child(2) a, ul.tabs li:nth-child(3) a, ul.tabs li:nth-child(4) a{
   top: 10px;
   right: 35px;
 }
-.modal5 a.close,.modal6 a.close, .modal7 a.close, .modal8 a.close, .modal9 a.close, .modal_plus a.close{
+.modal5 a.close,.modal6 a.close, .modal7 a.close, .modal8 a.close, .modal9 a.close, .modal_plus a.close, .modal_plus2 a.close{
     font-size: 25px;
     position: absolute;
     top: 10px;
     right: 40px;
 }
 .modal a.close:hover,.modal2 a.close:hover,.modal3 a.close:hover,.modal4 a.close:hover,
-.modal5 a.close:hover, .modal6 a.close:hover, .modal7 a.close:hover, .modal8 a.close:hover, .modal9 a.close:hover, .modal_plus a.close:hover{color: red;}
+.modal5 a.close:hover, .modal6 a.close:hover, .modal7 a.close:hover, .modal8 a.close:hover, .modal9 a.close:hover, .modal_plus a.close:hover, .modal_plus2 a.close:hover{color: red;}
 
 
 
@@ -673,6 +696,17 @@ ul.tabs li.current{
     transition:transform 0.5s easy-in-out;
     display: none;
 }
+.modal_plus2{
+    width: 500px;
+    height: 100%;
+    position: fixed;
+    top: 60%;
+    margin-top: 420px;
+    left: 700px;
+    z-index: 99;
+    transition:transform 0.5s easy-in-out;
+    display: none;
+}
 .modal10{
     background: rgb(255, 255, 255);
     width: 750px; height: 90%;
@@ -693,7 +727,7 @@ ul.tabs li.current{
 .modal a, .modal2 a {
   line-height: 1em;
 }
-.modal-bg, .modal-bg2, .modal-bg3, .modal-bg4, .modal-bg5, .modal-bg6, .modal-bg7, .modal-bg8 , .modal-bg9, .modal-bg11{
+.modal-bg, .modal-bg2, .modal-bg3, .modal-bg4, .modal-bg5, .modal-bg6, .modal-bg7, .modal-bg8 , .modal-bg9, .modal-bg11, .modal-bg12{
     background: rgb(41, 41, 41);
     zoom: 1;
     opacity: 0.9;
@@ -711,7 +745,7 @@ ul.tabs li.current{
     top: 110px;
     right: 120px;
 }
-.modal5 a.close,.modal6 a.close, .modal7 a.close, .modal8 a.close, .modal9 a.close, .modal_plus a.close{
+.modal5 a.close,.modal6 a.close, .modal7 a.close, .modal8 a.close, .modal9 a.close, .modal_plus a.close, .modal_plus2 a.close{
     font-size: 25px;
     position: absolute;
     top: 10px;
@@ -719,7 +753,7 @@ ul.tabs li.current{
 }
 
 .modal a.close:hover,.modal2 a.close:hover,.modal3 a.close:hover,.modal4 a.close:hover,
-.modal5 a.close:hover, .modal6 a.close:hover, .modal7 a.close:hover, .modal8 a.close:hover, .modal9 a.close:hover, .modal_plus a.close:hover{color: red;}
+.modal5 a.close:hover, .modal6 a.close:hover, .modal7 a.close:hover, .modal8 a.close:hover, .modal9 a.close:hover, .modal_plus a.close:hover, .modal_plus2 a.close:hover{color: red;}
 
 
 /* ------------ tab menu_ tab-content------------ */
@@ -749,7 +783,7 @@ ul.tabs li.current{
 .swiper-slide img{
     width: 400px;
 }
-.name{font-size: 35px; font-weight: bold;padding-left: 100px;padding-top: 30px;font-family: 'Nanum Myeongjo', serif;}
+.name{font-size: 35px; font-weight: bold;padding-left: 100px;padding-top: 30px; font-family: 'Merriweather', serif;}
 .intention{
     padding-left: 100px;
     font-size: 19px;
