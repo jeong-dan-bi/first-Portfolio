@@ -727,8 +727,8 @@ ul.tabs li.current{
 .modal a, .modal2 a {
   line-height: 1em;
 }
-.modal-bg, .modal-bg2, .modal-bg3, .modal-bg4, .modal-bg5, .modal-bg6, .modal-bg7, .modal-bg8 , .modal-bg9, .modal-bg11, .modal-bg12{
-    background: rgb(41, 41, 41);
+.modal-bg, .modal-bg2, .modal-bg3, .modal-bg4, .modal-bg5, .modal-bg6, .modal-bg7, .modal-bg8 , .modal-bg9, .modal-bg10, .modal-bg11, .modal-bg12{
+    background: rgb(66, 66, 66);
     zoom: 1;
     opacity: 0.9;
     filter: alpha(opacity=80); 
