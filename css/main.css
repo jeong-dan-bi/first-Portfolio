@@ -236,7 +236,7 @@
     {color: red;}
     
     /* ---------------------------------------------------------- */
-    /* ------DESIGN 영역------ */
+    /* ------DESIGN tab영역----- */
     .container{
         width: 300px;
         margin: auto;
@@ -322,7 +322,8 @@
         padding-top: 15px;
         box-shadow: 3px 3px 3px #ccc;
     }
-    /* button */
+
+    /* -------button------- */
     #slide .swiper-prev{
         position: absolute;
         bottom: 400px;
@@ -434,7 +435,8 @@ ul.tabs li:nth-child(2) a, ul.tabs li:nth-child(3) a, ul.tabs li:nth-child(4) a{
         height: 50px;
         font-size: 17px;
 }
-    /* button */
+
+/* -------button------- */
 #slide .swiper-prev{
         position: absolute;
         bottom: 460px;
@@ -455,7 +457,7 @@ ul.tabs li:nth-child(2) a, ul.tabs li:nth-child(3) a, ul.tabs li:nth-child(4) a{
     bottom: 390px;
 }
 
-/* modal */
+/* -------modal------- */
 .modal,.modal2,.modal3,.modal4 {
 	width: 55%;
 	height: 100%;
@@ -862,7 +864,8 @@ ul.Program li:nth-child(1), ul.day li:nth-child(1), ul.participation li:nth-chil
 ul.Program li:nth-child(2), ul.day li:nth-child(2), ul.participation li:nth-child(2), ul.plan li:nth-child(2){
     font-size: 14px;margin: 5px 0;
 }
-/*button*/
+
+/*-------button-------*/
 .pc_btn{display: block;width: 150px; height: 45px;
     background-color: #fafafa; box-shadow: 3px 3px 6px rgb(207, 206, 206); 
     text-align: center;padding: 10px;border-radius: 20px;
