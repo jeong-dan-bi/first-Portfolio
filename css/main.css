@@ -657,12 +657,13 @@ ul.tabs li.current{
     text-align: center;
     position: fixed;
     top: 50%;
-    margin-top: 480px;
+    margin-top: 430px;
     left: 35%;
     margin-left: 10px;
     line-height: 25px;
     z-index: 99;
-    transition:transform 0.5s easy-in-out
+    transition:transform 0.5s easy-in-out;
+    overflow: hidden;
 }
 .modal5, .modal6, .modal_plus{
     background: rgb(255, 255, 255);
